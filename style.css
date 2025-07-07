@@ -8,6 +8,7 @@ body {
   min-height: 100vh;
 }
 
+
 .container {
   display: flex;
   flex-direction: column;
@@ -18,13 +19,13 @@ body {
   text-align: center;
 }
 
-/ Title /
+
 .container h1 {
   font-size: 2rem;
   margin-bottom: 24px;
 }
 
-/ Note Form Styling /
+
 .note-form {
   display: flex;
   flex-direction: column;
@@ -65,11 +66,11 @@ body {
   background-color: #333;
 }
 
-
 #notes-container {
   width: 100%;
   max-width: 600px;
 }
+
 
 .note {
   background: #fff;
