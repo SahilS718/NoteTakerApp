@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Note Taker</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note-Taking App</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Note Taker</h1>
-    <textarea id="noteInput" placeholder="Write your note here..."></textarea>
-    <button onclick="addNote()">Add Note</button>
-    <div id="notesContainer"></div>
+    <h1>📝 My Notes</h1>
+    <div class="note-form">
+      <input type="text" id="note-title" placeholder="Title" required />
+      <textarea id="note-body" placeholder="Write your note here..." required></textarea>
+      <button id="add-note">Add Note</button>
+    </div>
+    <div id="notes-container"></div>
   </div>
   <script src="script.js"></script>
 </body>
