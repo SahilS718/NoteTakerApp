@@ -8,7 +8,7 @@
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Sahil Singh",
+  "author": "Sahil Singh, Sutibro Barua",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^2.2.0",
