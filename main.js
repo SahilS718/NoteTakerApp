@@ -54,5 +54,13 @@ function renderNote(note) {
   const notes = getNotes();
   notes.forEach(note => renderNote(note));
  }
+
+ function deleteNote(id) {
+  const notes = getNotes().filter(note => note.id !== id);
+  saveNotes(notes);
+  const noteEl = document.querySelector(`[data-id="${id}"]`);
+  if (noteEl) noteEl.remove();
+ }
+ 
  
  
