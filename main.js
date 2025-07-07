@@ -33,3 +33,20 @@ function addNote() {
   document.getElementById("note-body").value = "";
 }
 
+function renderNote(note) {
+  const container = document.getElementById("notes-container");
+  const noteEl = document.createElement("div");
+  noteEl.className = "note";
+  noteEl.setAttribute("data-id", note.id);
+ 
+ 
+  noteEl.innerHTML = `
+    <h3>${note.title}</h3>
+    <p>${note.body}</p>
+    <button onclick="deleteNote('${note.id}')">Delete</button>
+  `;
+ 
+ 
+  container.appendChild(noteEl);
+ }
+ 
