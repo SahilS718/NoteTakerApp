@@ -49,4 +49,10 @@ function renderNote(note) {
  
   container.appendChild(noteEl);
  }
+
+ function loadNotes() {
+  const notes = getNotes();
+  notes.forEach(note => renderNote(note));
+ }
+ 
  
